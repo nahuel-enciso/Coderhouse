@@ -1,0 +1,348 @@
+
+html{
+    color: ghostwhite;
+    background-color: #436868; 
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    color: ghostwhite;
+    background-color: #436868; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: ghostwhite;
+    background-color: #436868; 
+}
+
+.container-fluid {
+    color: ghostwhite;
+    background-color: #436868;
+}
+
+.container {
+    color: ghostwhite;
+    background-color: #436868;
+}
+
+h1{
+    margin :0;
+    padding:0;
+    color: ghostwhite;
+    background-color: #436868; 
+}
+#titulo{
+    color: ghostwhite;
+    background-color: #436868; 
+}
+
+.navbar{
+    color: ghostwhite;
+    background-color: #436868; 
+}
+
+#navbarNav {
+    color: ghostwhite;
+    background-color: #436868; 
+    margin:0%;
+    padding:0%;
+    justify-content: flex-end;
+}
+
+#navbarNav .navbar-nav {
+    margin-left: auto;
+    color: ghostwhite;
+    background-color: #436868; 
+}
+
+.nav-link{
+    color: ghostwhite;
+    background-color: #436868;
+
+}
+.nav-link:hover{
+    color: ghostwhite;
+    background-color: #436868;
+    font-weight: 600;  
+}
+
+.active{
+    color: ghostwhite;
+    background-color: #436868; 
+    font-weight: 800;  
+    text-decoration: underline;
+    text-decoration-color:ghostwhite ;
+}
+
+.navbar-toggler{
+    color: ghostwhite;
+    background-color: #436868; 
+}
+
+main {
+    background-color: #436868; 
+    padding-top: 1rem;
+    padding-bottom: 3.5em;
+}
+
+.ubicacion-card {
+    text-align: center;
+}
+
+.ubicacion-card p {
+    text-align: start;
+}
+
+.mapa {
+    height: 230px;
+    max-width: 100%;
+    object-fit: cover; /* rellena sin deformar */
+    object-position: center;
+    border-radius: 8px;
+}
+
+.hotel {
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #f8f8ff;
+}
+
+
+
+/********************** CODIGO CSS PARA PONER IMAGEN Y TEXTO AL LADO HOTELES.HTML *********************/
+Section article {
+    display: flex;
+    flex-direction: column;
+}
+
+Section article .contenido-flex {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+Section article img.portada {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+Section article .contenido-flex p {
+    flex: 1;
+    margin: 0;
+}
+
+Section article .link-habitaciones {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    Section article .contenido-flex {
+        flex-direction: column;
+    }
+    
+    Section article img.portada {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Responsive: en pantallas pequeñas vuelve a columna */
+@media (max-width: 768px) {
+    Section article {
+        flex-direction: column;
+    }
+    
+    Section article img.portada {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+/********************** FIN CSS PARA PONER IMAGEN Y TEXTO AL LADO HOTELES.HTML *********************/
+
+/********************** CODIGO CSS PARA HABITACIONES.HTML *********************/
+
+
+.carousel {
+    width: 40%;
+}
+
+
+#habitaciones_iguazu{
+    padding-top: 45px;
+}
+#habitaciones_chapelco{
+    padding-top: 45px;
+}
+
+/********************** FIN CSS PARA HABITACIONES.HTML *********************/
+
+/********************** CODIGO DE CSS para la tarjeta de reservas************************/
+
+#reservar {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: #3a3836;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #00000014;
+}
+
+#reservar h2 {
+    text-align: center;
+    color: #e1d1d2;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+label {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #e1d1d2;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    background-color: white;
+}
+
+input[type="number"],
+input[type="date"],
+select {
+    width: 80%;
+    max-width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    background-color: white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #4299e1;
+}
+
+select {
+    cursor: pointer;
+    background-color: white;
+}
+
+br {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box-form{
+padding-top: 16px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  grid: auto / 15% 35% 15% 35%;
+}
+
+/********************** FIN CODIGO DE CSS para la tarjeta de reservas************************/
+
+footer {
+    display: block;
+    background-color: #2f4949;
+    color: #f8f8ff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2em;
+    margin: 0;
+}
+
+.footer-float {
+    width: 100%;
+    align-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-float .izquierda {
+    float: left;
+}
+
+.footer-float .derecha {
+    float: right;
+}
+
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #2f4949;
+        color: #f8f8ff;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3.5em;
+        margin: 0;
+    }
+    main{
+        padding-bottom: 3.5em;
+    }
+}
+
+
+/*MEDIA QUERIES*/
+/* Mobile */
+/* @media (max-width: 576px) { }*/
+
+/* Tablet */
+/* @media (min-width: 577px) and (max-width: 768px) {
+
+}*/
+
+/* Desktop */
+/* @media (min-width: 769px) and (max-width: 1024px) { }*/
+
+/* Large Desktop */
+/* @media (min-width: 1025px) { }*/
