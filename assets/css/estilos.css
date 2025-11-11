@@ -1,61 +1,53 @@
-
-html{
-    color: ghostwhite;
-    background-color: #436868; 
-}
-
-header{
-    margin: 0;
-    padding: 0;
-    color: ghostwhite;
-    background-color: #436868; 
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    color: ghostwhite;
-    background-color: #436868; 
-}
-
-.container-fluid {
+html {
     color: ghostwhite;
     background-color: #436868;
 }
 
-.container {
+header {
+    margin: 0;
+    padding: 0;
     color: ghostwhite;
     background-color: #436868;
 }
 
-h1{
-    margin :0;
-    padding:0;
+body {
+    margin: 0;
+    padding: 0;
     color: ghostwhite;
-    background-color: #436868; 
-}
-#titulo{
-    color: ghostwhite;
-    background-color: #436868; 
+    background-color: #436868;
 }
 
-.navbar{
+/*****ESTILOS DE BARRA SUPERIOR DE NAVEGACION******/
+
+h1 {
+    margin: 0;
+    padding: 0;
     color: ghostwhite;
-    background-color: #436868; 
+    background-color: #436868;
+}
+
+#titulo {
+    color: ghostwhite;
+    background-color: #436868;
+}
+
+.navbar {
+    color: ghostwhite;
+    background-color: #436868;
 }
 
 #navbarNav {
     color: ghostwhite;
-    background-color: #436868; 
-    margin:0%;
-    padding:0%;
+    background-color: #436868;
+    margin: 0%;
+    padding: 0%;
     justify-content: flex-end;
 }
 
 #navbarNav .navbar-nav {
     margin-left: auto;
     color: ghostwhite;
-    background-color: #436868; 
+    background-color: #436868;
 }
 
 .nav-link {
@@ -68,29 +60,42 @@ h1{
     color: ghostwhite !important;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: ghostwhite;
     background-color: #436868;
-    font-weight: 600;  
+    font-weight: 600;
 }
 
-.active{
+.active {
     color: ghostwhite;
-    background-color: #436868; 
-    font-weight: 800;  
+    background-color: #436868;
+    font-weight: 800;
     text-decoration: underline;
-    text-decoration-color:ghostwhite ;
+    text-decoration-color: ghostwhite;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     color: ghostwhite;
-    background-color: #436868; 
+    background-color: #436868;
 }
+
+/*****FIN ESTILOS DE BARRA SUPERIOR DE NAVEGACION******/
+
 
 main {
-    background-color: #436868; 
+    background-color: #436868;
     padding-top: 1rem;
     padding-bottom: 3.5em;
+}
+
+.container-fluid {
+    color: ghostwhite;
+    background-color: #436868;
+}
+
+.container {
+    color: ghostwhite;
+    background-color: #436868;
 }
 
 .ubicacion-card {
@@ -104,7 +109,8 @@ main {
 .mapa {
     height: 230px;
     max-width: 100%;
-    object-fit: cover; /* rellena sin deformar */
+    object-fit: cover;
+    /* rellena sin deformar */
     object-position: center;
     border-radius: 8px;
 }
@@ -113,7 +119,7 @@ main {
     text-align: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: #f8f8ff;
 }
@@ -130,14 +136,18 @@ Section article .contenido-flex {
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    padding: 2%;
+    background-color: #3a3836;
+    border-radius: 8px;
 }
 
 Section article img.portada {
     width: 40%;
-    max-width: 400px;
+    max-width: 650px;
     height: auto;
     flex-shrink: 0;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 Section article .contenido-flex p {
@@ -145,17 +155,13 @@ Section article .contenido-flex p {
     margin: 0;
 }
 
-Section article .link-habitaciones {
-    text-align: left;
-    margin-top: 20px;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
     Section article .contenido-flex {
         flex-direction: column;
     }
-    
+
     Section article img.portada {
         width: 100%;
         max-width: 100%;
@@ -167,13 +173,16 @@ Section article .link-habitaciones {
     Section article {
         flex-direction: column;
     }
-    
+
     Section article img.portada {
         width: 100%;
         max-width: 100%;
     }
 }
+
 /********************** FIN CSS PARA PONER IMAGEN Y TEXTO AL LADO HOTELES.HTML *********************/
+
+
 
 /********************** CODIGO CSS PARA HABITACIONES.HTML *********************/
 
@@ -181,17 +190,38 @@ Section article .link-habitaciones {
     width: 45%;
 }
 
-#habitaciones_iguazu{
+#habitaciones_iguazu {
     padding-top: 45px;
 }
 
-#habitaciones_chapelco{
+#habitaciones_chapelco {
     padding-top: 45px;
 }
 
 /********************** FIN CSS PARA HABITACIONES.HTML *********************/
 
-/********************** CODIGO DE CSS para la tarjeta de reservas************************/
+
+
+/**********************  CSS PARA SERVICIOS.HTML *********************/
+
+.servicios {
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+}
+
+.icon {
+    width: 5rem;
+    max-width: 5rem;
+    height: auto;
+    background-color: antiquewhite;
+    border-radius: 8px;
+}
+
+/********************** FIN CSS PARA SERVICIOS.HTML *********************/
+
+
+/********************** CODIGO DE CSS FORM DE RESERVAS CONTACTO.HTML************************/
 
 #reservar {
     width: 100%;
@@ -280,12 +310,12 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-.box-form{
-padding-top: 16px;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 10px;
-  grid: auto / 15% 35% 15% 35%;
+.box-form {
+    padding-top: 16px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    grid: auto / 15% 35% 15% 35%;
 }
 
 /********************** FIN CODIGO DE CSS para la tarjeta de reservas************************/
@@ -330,7 +360,8 @@ footer {
         height: 3.5em;
         margin: 0;
     }
-    main{
+
+    main {
         padding-bottom: 4em;
     }
 }
