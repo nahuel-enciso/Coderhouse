@@ -58,11 +58,16 @@ h1{
     background-color: #436868; 
 }
 
-.nav-link{
+.nav-link {
     color: ghostwhite;
     background-color: #436868;
 
 }
+
+.navbar-nav .nav-link.active {
+    color: ghostwhite !important;
+}
+
 .nav-link:hover{
     color: ghostwhite;
     background-color: #436868;
@@ -172,15 +177,14 @@ Section article .link-habitaciones {
 
 /********************** CODIGO CSS PARA HABITACIONES.HTML *********************/
 
-
 .carousel {
-    width: 40%;
+    width: 45%;
 }
-
 
 #habitaciones_iguazu{
     padding-top: 45px;
 }
+
 #habitaciones_chapelco{
     padding-top: 45px;
 }
@@ -327,7 +331,7 @@ footer {
         margin: 0;
     }
     main{
-        padding-bottom: 3.5em;
+        padding-bottom: 4em;
     }
 }
 
@@ -337,9 +341,7 @@ footer {
 /* @media (max-width: 576px) { }*/
 
 /* Tablet */
-/* @media (min-width: 577px) and (max-width: 768px) {
-
-}*/
+/* @media (min-width: 577px) and (max-width: 768px) { }*/
 
 /* Desktop */
 /* @media (min-width: 769px) and (max-width: 1024px) { }*/
