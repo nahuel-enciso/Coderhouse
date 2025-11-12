@@ -54,6 +54,7 @@ a {
 
 .nav-link:hover {
     font-weight: 600;
+    color: ghostwhite !important;
 }
 
 .navbar-nav .nav-link.active,
