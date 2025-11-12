@@ -1,131 +1,111 @@
-html {
-    color: ghostwhite;
-    background-color: #436868;
-}
+/* ===========================    VARIABLES Y ESTILOS GLOBALES   =========================== */
 
-header {
-    margin: 0;
-    padding: 0;
-    color: ghostwhite;
-    background-color: #436868;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    color: ghostwhite;
-    background-color: #436868;
-}
-
-/*****ESTILOS DE BARRA SUPERIOR DE NAVEGACION******/
-
-h1 {
-    margin: 0;
-    padding: 0;
-    color: ghostwhite;
-    background-color: #436868;
-}
-
-#titulo {
-    color: ghostwhite;
-    background-color: #436868;
-}
-
-.navbar {
-    color: ghostwhite;
-    background-color: #436868;
-}
-
-#navbarNav {
-    color: ghostwhite;
-    background-color: #436868;
-    margin: 0%;
-    padding: 0%;
-    justify-content: flex-end;
-}
-
-#navbarNav .navbar-nav {
-    margin-left: auto;
-    color: ghostwhite;
-    background-color: #436868;
-}
-
-.nav-link {
-    color: ghostwhite;
-    background-color: #436868;
-
-}
-
-.navbar-nav .nav-link.active {
-    color: ghostwhite !important;
-}
-
-.nav-link:hover {
-    color: ghostwhite;
-    background-color: #436868;
-    font-weight: 600;
-}
-
-.active {
-    color: ghostwhite;
-    background-color: #436868;
-    font-weight: 800;
-    text-decoration: underline;
-    text-decoration-color: ghostwhite;
-}
-
-.navbar-toggler {
-    color: ghostwhite;
-    background-color: #436868;
-}
-
-/*****FIN ESTILOS DE BARRA SUPERIOR DE NAVEGACION******/
-
-
-main {
-    background-color: #436868;
-    padding-top: 1rem;
-    padding-bottom: 3.5em;
-}
-
-.container-fluid {
-    color: ghostwhite;
-    background-color: #436868;
-}
-
+/* Elementos agrupados con color y fondo común */
+html,
+body,
+header,
+h1,
+#titulo,
+.navbar,
+#navbarNav,
+#navbarNav .navbar-nav,
+.nav-link,
+.navbar-toggler,
+main,
+.container-fluid,
 .container {
     color: ghostwhite;
     background-color: #436868;
 }
 
-.ubicacion-card {
-    text-align: center;
+html,
+body,
+header,
+h1 {
+    margin: 0;
+    padding: 0;
 }
 
-.ubicacion-card p {
-    text-align: start;
+a {
+    text-decoration: none;
+    color: ghostwhite;
 }
 
-.mapa {
-    height: 230px;
-    max-width: 100%;
-    object-fit: cover;
-    /* rellena sin deformar */
-    object-position: center;
-    border-radius: 8px;
+/* ===========================    NAVEGACIÓN   =========================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    width: 100%;
+}
+
+#navbarNav {
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+#navbarNav .navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link:hover {
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active,
+.active {
+    color: ghostwhite !important;
+    font-weight: 800;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: ghostwhite;
+}
+
+/* Estilos para menú hamburguesa */
+.navbar-toggler {
+    border-color: ghostwhite;
+}
+
+/* Menú hamburguesa color del icono */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='ghostwhite' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* Menú hamburguesa desplegado - sombreado */
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem rgba(248, 248, 255, 0.25);
+}
+
+/* Menú hamburguesa desplegado - líneas más gruesas */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='ghostwhite' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ===========================   LAYOUT PRINCIPAL   =========================== */
+
+body {
+    padding-top: 56px;
+    /* Altura aproximada del navbar */
+}
+
+main {
+    padding-top: 1rem;
+    padding-bottom: 3.5em;
 }
 
 .hotel {
     text-align: center;
 }
 
-a {
-    text-decoration: none;
-    color: #f8f8ff;
-}
+/* ===========================    HOTELES    =========================== */
 
-
-/********************** CODIGO CSS PARA PONER IMAGEN Y TEXTO AL LADO HOTELES.HTML *********************/
 Section article {
     display: flex;
     flex-direction: column;
@@ -154,83 +134,53 @@ Section article .contenido-flex p {
     margin: 0;
 }
 
-
-/* Responsive */
-@media (max-width: 768px) {
-    Section article .contenido-flex {
-        flex-direction: column;
-    }
-
-    Section article img.portada {
-        width: 100%;
-        max-width: 100%;
-    }
-}
-
-/* Responsive: en pantallas pequeñas vuelve a columna */
-@media (max-width: 768px) {
-    Section article {
-        flex-direction: column;
-    }
-
-    Section article img.portada {
-        width: 100%;
-        max-width: 100%;
-    }
-}
-
-/********************** FIN CSS PARA PONER IMAGEN Y TEXTO AL LADO HOTELES.HTML *********************/
-
-
-
-/********************** CODIGO CSS PARA HABITACIONES.HTML *********************/
+/* ===========================   HABITACIONES   =========================== */
 
 .carousel {
-    width: 45%;
+    width: 85%;
 }
 
-#habitaciones_iguazu {
-    padding-top: 45px;
-}
-
+#habitaciones_iguazu,
 #habitaciones_chapelco {
     padding-top: 45px;
 }
 
-/********************** FIN CSS PARA HABITACIONES.HTML *********************/
-
-
-
-/**********************  CSS PARA SERVICIOS.HTML *********************/
+/* ===========================    SERVICIOS    =========================== */
 
 .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.servicios>div {
     display: flex;
-    flex-direction: row;
-justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
 }
 
 .icon {
     width: 5rem;
-    max-width: 5rem;
-    height: auto;
+    height: 5rem;
     background-color: antiquewhite;
     border-radius: 8px;
+    object-fit: contain;
 }
 
-/********************** FIN CSS PARA SERVICIOS.HTML *********************/
-
-
-/********************** CODIGO DE CSS FORM DE RESERVAS CONTACTO.HTML************************/
+/* ===========================   FORMULARIO DE RESERVAS   =========================== */
 
 #reservar {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20 auto;
 }
 
 form {
     background-color: #3a3836;
-    padding: 15px;
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0 2px 8px #00000014;
 }
@@ -238,7 +188,7 @@ form {
 #reservar h2 {
     text-align: center;
     color: #e1d1d2;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     font-size: 1.8em;
 }
 
@@ -252,10 +202,8 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"],
-select {
+input[type="tel"] {
     width: 100%;
-    max-width: 100%;
     padding: 5px;
     border: 1px solid #ddd;
     border-radius: 6px;
@@ -264,11 +212,21 @@ select {
     background-color: white;
 }
 
-input[type="number"],
-input[type="date"],
 select {
     width: 80%;
     max-width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    background-color: white;
+    cursor: pointer;
+}
+
+input[type="number"],
+input[type="date"] {
+    width: 80%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 6px;
@@ -285,11 +243,6 @@ input[type="date"]:focus,
 select:focus {
     outline: none;
     border-color: #4299e1;
-}
-
-select {
-    cursor: pointer;
-    background-color: white;
 }
 
 br {
@@ -312,18 +265,36 @@ input[type="submit"] {
 .box-form {
     padding-top: 16px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 15% 35% 15% 35%;
     gap: 10px;
-    grid: auto / 15% 35% 15% 35%;
 }
 
-/********************** FIN CODIGO DE CSS para la tarjeta de reservas************************/
+/* ===========================    UBICACIÓN    =========================== */
+
+.ubicacion-card {
+    text-align: center;
+}
+
+.ubicacion-card p {
+    text-align: start;
+}
+
+.mapa {
+    height: 230px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+/* ===========================   FOOTER    =========================== */
 
 footer {
     display: block;
     background-color: #2f4949;
     color: #f8f8ff;
     position: fixed;
+    z-index: 1000;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -346,35 +317,102 @@ footer {
     float: right;
 }
 
-@media (max-width: 768px) {
+/* ===========================   MEDIA QUERIES   =========================== */
+
+/* Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+    main {
+        padding-bottom: 7em;
+    }
+
+    .box-form {
+        align-items: justify;
+        grid-template-columns: 30% 60%;
+        gap: 22px;
+    }
+
+    #reservar {
+        padding-bottom: 4em;
+    }
+
+    footer {
+        height: auto;
+        min-height: 4em;
+    }
+
+    .footer-float {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        padding: 0.5em 20px;
+    }
+
+    .footer-float .izquierda,
+    .footer-float .derecha {
+        float: none;
+    }
+
+    /* Servicios - 1 columna */
+    .servicios {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile - Habitaciones (max-width: 480px) */
+@media (max-width: 480px) {
+    .rooms {
+        width: 100%;
+    }
+
+    .carousel {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .habitaciones {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #habitaciones_iguazu,
+    #habitaciones_chapelco {
+        text-align: center;
+    }
+
+    #habitaciones_iguazu .row,
+    #habitaciones_chapelco .row {
+        justify-content: center;
+    }
+}
+
+/* Tablet (min-width: 480px and max-width: 768px) */
+@media (min-width: 480px) and (max-width: 768px) {
     footer {
         display: flex;
         flex-direction: column;
-        background-color: #2f4949;
-        color: #f8f8ff;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
         height: 3.5em;
-        margin: 0;
     }
 
     main {
         padding-bottom: 4em;
     }
+
+    /* Servicios - 2 columnas */
+    .servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+/* Tablet - Hoteles (max-width: 768px) */
+@media (max-width: 768px) {
+    Section article .contenido-flex {
+        flex-direction: column;
+    }
 
-/*MEDIA QUERIES*/
-/* Mobile */
-/* @media (max-width: 576px) { }*/
-
-/* Tablet */
-/* @media (min-width: 577px) and (max-width: 768px) { }*/
-
-/* Desktop */
-/* @media (min-width: 769px) and (max-width: 1024px) { }*/
-
-/* Large Desktop */
-/* @media (min-width: 1025px) { }*/
+    Section article img.portada {
+        width: 100%;
+        max-width: 100%;
+    }
+}
