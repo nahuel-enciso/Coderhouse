@@ -20,7 +20,8 @@
 }
 
 .nav-link:hover {
-  font-weight: 600;
+    font-weight: 600;
+    color: ghostwhite !important;
 }
 
 .navbar-nav .nav-link.active,
@@ -54,4 +55,331 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='ghostwhite' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/* ===========================   LAYOUT PRINCIPAL   =========================== */
+
+body {
+    padding-top: 56px;
+    /* Altura aproximada del navbar */
+}
+
+main {
+    padding-top: 1rem;
+    padding-bottom: 3.5em;
+}
+
+.hotel {
+    text-align: center;
+}
+
+/* ===========================    HOTELES    =========================== */
+
+Section article {
+    display: flex;
+    flex-direction: column;
+}
+
+Section article .contenido-flex {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 2%;
+    background-color: #3a3836;
+    border-radius: 8px;
+}
+
+Section article img.portada {
+    width: 40%;
+    max-width: 650px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+Section article .contenido-flex p {
+    flex: 1;
+    margin: 0;
+}
+
+/* ===========================   HABITACIONES   =========================== */
+
+.carousel {
+    width: 85%;
+}
+
+#habitaciones_iguazu,
+#habitaciones_chapelco {
+    padding-top: 45px;
+}
+
+/* ===========================    SERVICIOS    =========================== */
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.servicios>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+/* ===========================   FORMULARIO DE RESERVAS   =========================== */
+
+#reservar {
+    width: 100%;
+    max-width: 800px;
+    margin: 20 auto;
+}
+
+form {
+    background-color: #3a3836;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #00000014;
+}
+
+#reservar h2 {
+    text-align: center;
+    color: #e1d1d2;
+    margin-bottom: 5px;
+    font-size: 1.8em;
+}
+
+label {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #e1d1d2;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    background-color: white;
+}
+
+select {
+    width: 80%;
+    max-width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    background-color: white;
+    cursor: pointer;
+}
+
+input[type="number"],
+input[type="date"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    background-color: white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #4299e1;
+}
+
+br {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box-form {
+    padding-top: 16px;
+    display: grid;
+    grid-template-columns: 15% 35% 15% 35%;
+    gap: 10px;
+}
+
+/* ===========================    UBICACIÓN    =========================== */
+
+.ubicacion-card {
+    text-align: center;
+}
+
+.ubicacion-card p {
+    text-align: start;
+}
+
+.mapa {
+    height: 230px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+/* ===========================   FOOTER    =========================== */
+
+footer {
+    display: block;
+    background-color: #2f4949;
+    color: #f8f8ff;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2em;
+    margin: 0;
+}
+
+.footer-float {
+    width: 100%;
+    align-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-float .izquierda {
+    float: left;
+}
+
+.footer-float .derecha {
+    float: right;
+}
+
+/* ===========================   MEDIA QUERIES   =========================== */
+
+/* Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+    main {
+        padding-bottom: 7em;
+    }
+
+    .box-form {
+        align-items: justify;
+        grid-template-columns: 30% 60%;
+        gap: 22px;
+    }
+
+    #reservar {
+        padding-bottom: 4em;
+    }
+
+    footer {
+        height: auto;
+        min-height: 4em;
+    }
+
+    .footer-float {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        padding: 0.5em 20px;
+    }
+
+    .footer-float .izquierda,
+    .footer-float .derecha {
+        float: none;
+    }
+
+    /* Servicios - 1 columna */
+    .servicios {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile - Habitaciones (max-width: 480px) */
+@media (max-width: 480px) {
+    .rooms {
+        width: 100%;
+    }
+
+    .carousel {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .habitaciones {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #habitaciones_iguazu,
+    #habitaciones_chapelco {
+        text-align: center;
+    }
+
+    #habitaciones_iguazu .row,
+    #habitaciones_chapelco .row {
+        justify-content: center;
+    }
+}
+
+/* Tablet (min-width: 480px and max-width: 768px) */
+@media (min-width: 480px) and (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 3.5em;
+    }
+
+    main {
+        padding-bottom: 4em;
+    }
+
+    /* Servicios - 2 columnas */
+    .servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet - Hoteles (max-width: 768px) */
+@media (max-width: 768px) {
+    Section article .contenido-flex {
+        flex-direction: column;
+    }
+
+    Section article img.portada {
+        width: 100%;
+        max-width: 100%;
+    }
+}
