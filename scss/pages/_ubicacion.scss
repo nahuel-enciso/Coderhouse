@@ -1,0 +1,17 @@
+/* ===========================    UBICACIÓN    =========================== */
+
+.ubicacion-card {
+    text-align: center;
+}
+
+.ubicacion-card p {
+    text-align: start;
+}
+
+.mapa {
+    height: 230px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}

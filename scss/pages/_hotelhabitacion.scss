@@ -1,0 +1,41 @@
+/* ===========================    HOTELES    =========================== */
+
+Section article {
+    display: flex;
+    flex-direction: column;
+}
+
+Section article .contenido-flex {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 2%;
+    background-color: #3a3836;
+    border-radius: 8px;
+}
+
+Section article img.portada {
+    width: 40%;
+    max-width: 650px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+Section article .contenido-flex p {
+    flex: 1;
+    margin: 0;
+}
+
+/* ===========================   HABITACIONES   =========================== */
+
+.carousel {
+    width: 85%;
+}
+
+#habitaciones_iguazu,
+#habitaciones_chapelco {
+    padding-top: 45px;
+}
+

@@ -1,0 +1,48 @@
+/* ===========================    VARIABLES Y ESTILOS GLOBALES   =========================== */
+/*hola sass*/
+/* Elementos agrupados con color y fondo común */
+html,
+body,
+header,
+h1,
+#titulo,
+.navbar,
+#navbarNav,
+#navbarNav .navbar-nav,
+.nav-link,
+.navbar-toggler,
+main,
+.container-fluid,
+.container {
+    color: ghostwhite;
+    background-color: #436868;
+}
+
+html,
+body,
+header,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+/* ===========================   LAYOUT PRINCIPAL   =========================== */
+
+body {
+    padding-top: 56px;
+    /* Altura aproximada del navbar */
+}
+
+main {
+    padding-top: 1rem;
+    padding-bottom: 3.5em;
+}
+
+.hotel {
+    text-align: center;
+}

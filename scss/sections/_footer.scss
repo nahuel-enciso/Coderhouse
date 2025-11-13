@@ -1,0 +1,31 @@
+
+/* ===========================   FOOTER    =========================== */
+
+footer {
+    display: block;
+    background-color: #2f4949;
+    color: #f8f8ff;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2em;
+    margin: 0;
+}
+
+.footer-float {
+    width: 100%;
+    align-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-float .izquierda {
+    float: left;
+}
+
+.footer-float .derecha {
+    float: right;
+}
+
