@@ -1,66 +1,97 @@
-@charset "UTF-8";
-/* ===========================    NAVEGACIÓN   =========================== */
+/* ===========================
+   VARIABLES Y ESTILOS GLOBALES
+   =========================== */
+
+/* Elementos base con color y fondo común */
+html,
+body,
+header,
+h1,
+#titulo,
+.navbar,
+#navbarNav,
+#navbarNav .navbar-nav,
+.nav-link,
+.navbar-toggler,
+main,
+.container-fluid,
+.container {
+    color: ghostwhite;
+    background-color: #436868;
+}
+
+html,
+body,
+header,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+/* ===========================
+   NAVEGACIÓN
+   =========================== */
+
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    width: 100%;
 }
 
 #navbarNav {
-  margin: 0;
-  padding: 0;
-  justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
 }
 
 #navbarNav .navbar-nav {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 .nav-link:hover {
     font-weight: 600;
-    color: ghostwhite !important;
 }
 
 .navbar-nav .nav-link.active,
 .active {
-  color: ghostwhite !important;
-  font-weight: 800;
+    color: ghostwhite !important;
+    font-weight: 800;
 }
 
 .active {
-  text-decoration: underline;
-  text-decoration-color: ghostwhite;
+    text-decoration: underline;
+    text-decoration-color: ghostwhite;
 }
 
 /* Estilos para menú hamburguesa */
 .navbar-toggler {
-  border-color: ghostwhite;
+    border-color: ghostwhite;
 }
 
-/* Menú hamburguesa color del icono */
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='ghostwhite' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='ghostwhite' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* Menú hamburguesa desplegado - sombreado */
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 0.15rem rgba(248, 248, 255, 0.25);
+    box-shadow: 0 0 0 0.15rem rgba(248, 248, 255, 0.25);
 }
 
 /* Menú hamburguesa desplegado - líneas más gruesas */
-.navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='ghostwhite' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='ghostwhite' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* ===========================   LAYOUT PRINCIPAL   =========================== */
-
-body {
-    padding-top: 56px;
-    /* Altura aproximada del navbar */
-}
+/* ===========================
+   LAYOUT PRINCIPAL
+   =========================== */
 
 main {
     padding-top: 1rem;
@@ -71,7 +102,9 @@ main {
     text-align: center;
 }
 
-/* ===========================    HOTELES    =========================== */
+/* ===========================
+   HOTELES - CONTENIDO FLEX
+   =========================== */
 
 Section article {
     display: flex;
@@ -101,10 +134,12 @@ Section article .contenido-flex p {
     margin: 0;
 }
 
-/* ===========================   HABITACIONES   =========================== */
+/* ===========================
+   HABITACIONES
+   =========================== */
 
 .carousel {
-    width: 85%;
+    width: 45%;
 }
 
 #habitaciones_iguazu,
@@ -112,7 +147,9 @@ Section article .contenido-flex p {
     padding-top: 45px;
 }
 
-/* ===========================    SERVICIOS    =========================== */
+/* ===========================
+   SERVICIOS
+   =========================== */
 
 .servicios {
     display: grid;
@@ -121,7 +158,7 @@ Section article .contenido-flex p {
     padding: 1rem;
 }
 
-.servicios>div {
+.servicios > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,17 +174,19 @@ Section article .contenido-flex p {
     object-fit: contain;
 }
 
-/* ===========================   FORMULARIO DE RESERVAS   =========================== */
+/* ===========================
+   FORMULARIO DE RESERVAS
+   =========================== */
 
 #reservar {
     width: 100%;
     max-width: 800px;
-    margin: 20 auto;
+    margin: 0 auto;
 }
 
 form {
     background-color: #3a3836;
-    padding: 40px;
+    padding: 15px;
     border-radius: 12px;
     box-shadow: 0 2px 8px #00000014;
 }
@@ -155,7 +194,7 @@ form {
 #reservar h2 {
     text-align: center;
     color: #e1d1d2;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
     font-size: 1.8em;
 }
 
@@ -236,7 +275,9 @@ input[type="submit"] {
     gap: 10px;
 }
 
-/* ===========================    UBICACIÓN    =========================== */
+/* ===========================
+   UBICACIÓN
+   =========================== */
 
 .ubicacion-card {
     text-align: center;
@@ -254,7 +295,9 @@ input[type="submit"] {
     border-radius: 8px;
 }
 
-/* ===========================   FOOTER    =========================== */
+/* ===========================
+   FOOTER
+   =========================== */
 
 footer {
     display: block;
@@ -284,7 +327,9 @@ footer {
     float: right;
 }
 
-/* ===========================   MEDIA QUERIES   =========================== */
+/* ===========================
+   MEDIA QUERIES
+   =========================== */
 
 /* Mobile (max-width: 576px) */
 @media (max-width: 576px) {
