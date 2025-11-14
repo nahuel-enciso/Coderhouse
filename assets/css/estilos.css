@@ -1,6 +1,4 @@
-/* ===========================
-   VARIABLES Y ESTILOS GLOBALES
-   =========================== */
+/* ===========================   VARIABLES Y ESTILOS GLOBALES   =========================== */
 
 /* Elementos base con color y fondo común */
 html,
@@ -33,9 +31,7 @@ a {
     color: ghostwhite;
 }
 
-/* ===========================
-   NAVEGACIÓN
-   =========================== */
+/* ===========================   NAVEGACIÓN   =========================== */
 
 .navbar {
     position: fixed;
@@ -89,9 +85,7 @@ a {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='ghostwhite' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* ===========================
-   LAYOUT PRINCIPAL
-   =========================== */
+/* ===========================   LAYOUT PRINCIPAL   =========================== */
 
 main {
     padding-top: 1rem;
@@ -102,9 +96,7 @@ main {
     text-align: center;
 }
 
-/* ===========================
-   HOTELES - CONTENIDO FLEX
-   =========================== */
+/* ===========================    HOTELES - CONTENIDO FLEX   =========================== */
 
 Section article {
     display: flex;
@@ -134,9 +126,7 @@ Section article .contenido-flex p {
     margin: 0;
 }
 
-/* ===========================
-   HABITACIONES
-   =========================== */
+/* ===========================   HABITACIONES   =========================== */
 
 .carousel {
     width: 45%;
@@ -147,9 +137,7 @@ Section article .contenido-flex p {
     padding-top: 45px;
 }
 
-/* ===========================
-   SERVICIOS
-   =========================== */
+/* ===========================   SERVICIOS   =========================== */
 
 .servicios {
     display: grid;
@@ -174,9 +162,7 @@ Section article .contenido-flex p {
     object-fit: contain;
 }
 
-/* ===========================
-   FORMULARIO DE RESERVAS
-   =========================== */
+/* ===========================   FORMULARIO DE RESERVAS   =========================== */
 
 #reservar {
     width: 100%;
@@ -275,9 +261,7 @@ input[type="submit"] {
     gap: 10px;
 }
 
-/* ===========================
-   UBICACIÓN
-   =========================== */
+/* ===========================   UBICACIÓN   =========================== */
 
 .ubicacion-card {
     text-align: center;
@@ -295,9 +279,7 @@ input[type="submit"] {
     border-radius: 8px;
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
+/* ===========================   FOOTER   =========================== */
 
 footer {
     display: block;
@@ -327,9 +309,7 @@ footer {
     float: right;
 }
 
-/* ===========================
-   MEDIA QUERIES
-   =========================== */
+/* ===========================   MEDIA QUERIES   =========================== */
 
 /* Mobile (max-width: 576px) */
 @media (max-width: 576px) {
